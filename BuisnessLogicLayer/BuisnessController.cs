@@ -15,7 +15,7 @@ namespace BuisnessLogicLayer
         public List<Book> ReadBooks(string input)
         {
             Book temp = new Book();
-            string[] lines = input.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+             string[] lines = input.Split(new string[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
 
             foreach (string line in lines)
             {
